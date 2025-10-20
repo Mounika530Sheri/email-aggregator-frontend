@@ -10,7 +10,7 @@ export default function SuggestReply({ emailBody }) {
       setLoading(true);
       setReply(""); 
 
-      const r = await axios.post("http://localhost:4000/api/emails/suggest-reply", {
+      const r = await axios.post("https://onebox-email-aggregator-pxfy.onrender.com/api/emails/suggest-reply", {
         emailBody,
         context: "I am applying for a job position. If the lead is interested, share the meeting booking link: https://cal.com/example"
       });
