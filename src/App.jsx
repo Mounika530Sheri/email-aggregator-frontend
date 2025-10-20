@@ -12,7 +12,7 @@ export default function App() {
   const search = async () => {
     try {
       const r = await axios.get(
-        `http://localhost:4000/api/emails/search?q=${encodeURIComponent(q)}`
+        `https://onebox-email-aggregator-pxfy.onrender.com/api/emails/search?q=${encodeURIComponent(q)}`
       );
 
       console.log("Search result:", r.data);
